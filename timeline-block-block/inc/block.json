@@ -1,0 +1,128 @@
+{
+	"apiVersion": "1",
+	"name": "tlgb/b-timeline-block",
+	"title": "B Timeline Block",
+	"description": "Show your story or Memories on the web.",
+	"category": "widgets",
+	"keywords": [
+		"b-timeline",
+		"timeline",
+		"timeline-block"
+	],
+	"textdomain": "timeline-block",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": ""
+		},
+		"cId": {
+			"type": "string",
+			"default": ""
+		},
+		"timelines": {
+			"type": "array",
+			"default": [
+				{
+					"label": "January",
+					"description": "Note of the january month"
+				},
+				{
+					"label": "February",
+					"description": "Note of the February month"
+				},
+				{
+					"label": "March",
+					"description": "Note of the March month"
+				}
+			]
+		},
+		"type": {
+			"type": "string",
+			"default": "vertical"
+		},
+		"labelLocation": {
+			"type": "string",
+			"default": "right"
+		},
+		"startIndex": {
+			"type": "number",
+			"default": 1
+		},
+		"vigibleItems": {
+			"type": "number",
+			"default": 4
+		},
+		"moveItem": {
+			"type": "number",
+			"default": 2
+		},
+		"verticalTrigger": {
+			"type": "string",
+			"default": "150px"
+		},
+		"rtlMode": {
+			"type": "boolean",
+			"default": false
+		},
+		"barBackground": {
+			"type": "string",
+			"default": "#dddddd"
+		},
+		"barDotColor": {
+			"type": "string",
+			"default": "#dddddd"
+		},
+		"itemBg": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"itemColor": {
+			"type": "string",
+			"default": "#333333"
+		},
+		"itemTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 14,
+					"tablet": 14,
+					"mobile": 14
+				}
+			}
+		},
+		"itemBorder": {
+			"type": "object",
+			"default": {
+				"width": "1px",
+				"color": "#cccccc"
+			}
+		},
+		"labelTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 16,
+					"tablet": 16,
+					"mobile": 16
+				}
+			}
+		},
+		"labelColor": {
+			"type": "string",
+			"default": "#222222"
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"html": false
+	},
+	"example": {
+		"attributes": {
+			"preview": true
+		}
+	},
+	"editorScript": "file:../dist/editor.js"
+}
