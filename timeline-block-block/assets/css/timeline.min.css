@@ -63,7 +63,7 @@
   left: 0;
 }
 .timeline__item--right {
-  left: 50%;
+  /* left: 50%; */
   padding: 0.625rem 0 0.625rem 2.5rem;
 }
 .timeline__item--right:after {
@@ -177,7 +177,8 @@
   justify-content: center;
 }
 .timeline--horizontal .timeline__item .timeline__content__wrap {
-  display: table-cell;
+  display: flex;
+  align-items: end;
   margin: 0;
   padding: 0;
   vertical-align: bottom;

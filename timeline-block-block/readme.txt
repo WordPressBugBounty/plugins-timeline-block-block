@@ -1,32 +1,45 @@
-=== Timeline Block - Timeline block plugin for WP ===
-Contributors: bplugins, abuhayat, charlescormier
+=== Timeline Block - Timeline block plugin for WordPress ===
+Contributors: bplugins, abuhayat, taninrahman21, charlescormier, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
-Tags: block, timeline, content, Gutenberg block, widget
-Requires at least: 6.2+
-Tested up to: 6.6.2
-Stable tag: 1.0.7
+Tags: block, timeline, vertical timeline, horizontal timeline, widget
+Requires at least: 6.5+
+Tested up to: 6.7
+Stable tag: 1.1.0
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Create and display timeline content on our site. 
+Design Timeline with ease! Featuring 7 customizable themes in both horizontal and vertical layouts,lets you showcase your stories,events,or projects. 
 
 == Description ==
 
-This is a block plugin that enables you to create and display timeline / Story content on our site. Since it's a block plugin It will add a new block (Timeline )into the block editor of your WordPress. 
+The Timeline Block Plugin is your ultimate solution for creating visually stunning and fully customizable timelines in WordPress. With 3 unique themes, each supporting both horizontal and vertical layouts, this plugin offers unparalleled flexibility to showcase your stories, projects, milestones, or events in a captivating format.
+
+Designed with user-friendliness in mind, the Timeline Block Plugin empowers you to effortlessly add, edit, and style your timeline directly in the WordPress editor. Customize colors, fonts, icons, and more to align perfectly with your brand or website design. Whether you're creating a project roadmap, a personal story, or a historical timeline, the plugin adapts to your needs with precision. 
 
 
 **[Demos](https://bblockswp.com/demo/timeline/)**
 
 
-= Features =
-- **HTML in Description**: Can use HTML in the description to customize the content according to user preferences.
-- **Type**: Show the timeline in a horizontal or vertical position.
+= Key Features =
+- **Default Theme**: Customize the default theme to match your style and preferences.
+- **Timeline Type**: Easily switch between horizontal and vertical layouts in the default theme.
+- **Start Index**: Set the starting position (left or right) for both horizontal and vertical timelines.
+- **Display Item**: Choose how many items to display in the horizontal timeline for a tailored view.
+- **Insert HTML in timeline title**: Add custom HTML to enhance your timeline titles.
 
 
+= Pro Features =
+- **Add Shortcode API**: You can access a very powerful shortcode plugin which have some incredible features and you can use anywhere this plugin by using this features.
+- **Six Extra Themes**: Access six more professionally designed themes, some themes supporting both horizontal and vertical layouts.
+- **Classic Editor for Descriptions**: Edit timeline descriptions beautifully with the integrated classic editor, providing advanced formatting options.
+- **Customizable Icons**: Add unique icons to your timeline items and style them to create a polished, professional look.
+- **Enhanced Customization Options**: Fine-tune every aspect of your timeline for ultimate design control.
+
+ 
 = How to use =
-- First, install the Block Directory plugin
-- Add the Block Directory block from the block category called "Widgets" in the Gutenberg editor.
+- First, install the *Timeline Block* plugin
+- Add the *B Timeline Block* block from the block category called "Widgets" in the Gutenberg editor.
 - You can change block settings from the right-side settings sidebar.
 - Enjoy!
 
@@ -104,6 +117,9 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 1.1.0 - 16 Jan 2025 =
+* Upload v1.1.0 - upload a premium version with some incredible features.
 
 = 1.0.7 - 14 Feb 2024 =
 * Fix issue
