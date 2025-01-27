@@ -175,6 +175,14 @@
         },
         "iconBorderHover": "1px solid #efefef"
       }
+    },
+    "demoTiny": {
+      "type": "array",
+      "default": [
+        "Hello World",
+        "Tanin World",
+        "Shamim World"
+      ]
     }
   },
   "supports": {
