@@ -1,10 +1,10 @@
-=== Timeline Block - Timeline block plugin for WordPress ===
+=== Timeline Block - Timeline Block Plugin for WordPress ===
 Contributors: bplugins, abuhayat, taninrahman, charlescormier, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, timeline, vertical timeline, horizontal timeline, widget
 Requires at least: 6.5+
 Tested up to: 6.7
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -13,7 +13,7 @@ Design Timeline with ease! Featuring 7 customizable themes in both horizontal an
 
 == Description ==
 
-The Timeline Block Plugin is your ultimate solution for creating visually stunning and fully customizable timelines in WordPress. With 3 unique themes, each supporting both horizontal and vertical layouts, this plugin offers unparalleled flexibility to showcase your stories, projects, milestones, or events in a captivating format.
+The Timeline Block Plugin is your ultimate solution for creating visually stunning and fully customizable timelines in WordPress. With 6 unique themes, each supporting both horizontal and vertical layouts, this plugin offers unparalleled flexibility to showcase your stories, projects, milestones, or events in a captivating format.
 
 Designed with user-friendliness in mind, the Timeline Block Plugin empowers you to effortlessly add, edit, and style your timeline directly in the WordPress editor. Customize colors, fonts, icons, and more to align perfectly with your brand or website design. Whether you're creating a project roadmap, a personal story, or a historical timeline, the plugin adapts to your needs with precision. 
 
@@ -117,6 +117,9 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 
 == Changelog ==
+
+= 1.1.4 - 9 March 2025 =
+* Fixed Issues and Update Readme.
 
 = 1.1.3 - 8 Feb 2025 =
 * Fixed Issues.

@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Timeline Block
  * Description: Display timeline content on your site. 
- * Version: 1.1.3
+ * Version: 1.1.4
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -25,7 +25,7 @@ if ( function_exists( 'tlgb_fs' ) ) {
     } );
 } else {
     // Constant
-    define( 'TLGB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.1.3' ) );
+    define( 'TLGB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.1.4' ) );
     define( 'TLGB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'TLGB_DIR_PATH', plugin_dir_path( __FILE__ ) );
     define( 'TLGB_HAS_FREE', 'timeline-block-block/plugin.php' === plugin_basename( __FILE__ ) );
@@ -108,7 +108,10 @@ if ( function_exists( 'tlgb_fs' ) ) {
             }
 
             function tlgbPipeChecker() {
-                $nonce = $_POST['_wpnonce'] ?? null;
+                if ( !isset( $_POST['_wpnonce'] ) ) {
+                    wp_send_json_error( 'Invalid Request' );
+                }
+                $nonce = sanitize_text_field( wp_unslash( $_POST['_wpnonce'] ) );
                 if ( !wp_verify_nonce( $nonce, 'wp_ajax' ) ) {
                     wp_send_json_error( 'Invalid Request' );
                 }

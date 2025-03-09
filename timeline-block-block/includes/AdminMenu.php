@@ -42,8 +42,8 @@ if (!class_exists('ACHBAdminMenu')) {
     {
       if ('tools_page_timeline-block' === $hook) {
         wp_enqueue_style('tlgb-admin-help', TLGB_DIR_URL . 'build/admin-help.css', [], TLGB_VERSION);
-        wp_enqueue_script('tlgb-admin-help', TLGB_DIR_URL . 'build/admin-help.js', ['react', 'react-dom'], TLGB_VERSION);
-        wp_enqueue_script('fs', TLGB_DIR_URL . 'assets/js/fs.js', [], '1');
+        wp_enqueue_script('tlgb-admin-help', TLGB_DIR_URL . 'build/admin-help.js', ['react', 'react-dom'], TLGB_VERSION, true);
+        wp_enqueue_script('fs', TLGB_DIR_URL . 'assets/js/fs.js', [], '1', true);
         wp_set_script_translations('tlgb-admin-help', 'timeline-block', TLGB_DIR_PATH . 'languages');
       }
     }
