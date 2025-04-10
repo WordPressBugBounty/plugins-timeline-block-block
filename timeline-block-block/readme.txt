@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, timeline, vertical timeline, horizontal timeline, widget
 Requires at least: 6.5+
 Tested up to: 6.7
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html

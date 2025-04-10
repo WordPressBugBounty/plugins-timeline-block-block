@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Timeline Block
  * Description: Display timeline content on your site. 
- * Version: 1.1.5
+ * Version: 1.1.6
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -25,7 +25,7 @@ if ( function_exists( 'tlgb_fs' ) ) {
     } );
 } else {
     // Constant
-    define( 'TLGB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.1.5' ) );
+    define( 'TLGB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.1.6' ) );
     define( 'TLGB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'TLGB_DIR_PATH', plugin_dir_path( __FILE__ ) );
     define( 'TLGB_HAS_FREE', 'timeline-block-block/plugin.php' === plugin_basename( __FILE__ ) );
@@ -96,10 +96,8 @@ if ( function_exists( 'tlgb_fs' ) ) {
             public function __construct() {
                 add_action( 'init', [$this, 'init'] );
                 // Block registration
-                add_action( 'wp_enqueue_scripts', [$this, 'tlgb_enqueue_scripts'] );
-                // Frontend script
-                add_action( 'enqueue_block_editor_assets', [$this, 'tlgb_enqueue_editor_scripts'] );
-                // Backend (block editor) script
+                add_action( 'enqueue_block_assets', [$this, 'tlgb_enqueue_scripts'] );
+                // Enqueue Block Assets For Frontend and Backend
                 add_action( 'wp_ajax_tlgbPipeChecker', [$this, 'tlgbPipeChecker'] );
                 add_action( 'wp_ajax_nopriv_tlgbPipeChecker', [$this, 'tlgbPipeChecker'] );
                 add_action( 'admin_init', [$this, 'registerSettings'] );
@@ -135,7 +133,7 @@ if ( function_exists( 'tlgb_fs' ) ) {
                 ] );
             }
 
-            // Function to enqueue frontend scripts
+            // Function to enqueue block assets for backend and frontend
             public function tlgb_enqueue_scripts() {
                 wp_enqueue_script(
                     'timelineJS',
@@ -144,27 +142,9 @@ if ( function_exists( 'tlgb_fs' ) ) {
                     TLGB_VERSION,
                     true
                 );
-                // Enqueue the frontend CSS
+                // Enqueue the CSS
                 wp_enqueue_style(
                     'timelineCSS',
-                    TLGB_DIR_URL . 'assets/css/timeline.min.css',
-                    [],
-                    TLGB_VERSION
-                );
-            }
-
-            // Function to enqueue block editor scripts
-            public function tlgb_enqueue_editor_scripts() {
-                wp_enqueue_script(
-                    'timeline-block-editor',
-                    TLGB_DIR_URL . 'assets/js/timeline.min.js',
-                    [],
-                    TLGB_VERSION,
-                    true
-                );
-                // Enqueue the CSS for the block editor
-                wp_enqueue_style(
-                    'timeline-editor-css',
                     TLGB_DIR_URL . 'assets/css/timeline.min.css',
                     [],
                     TLGB_VERSION
