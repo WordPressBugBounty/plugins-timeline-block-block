@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Timeline Block
  * Description: Display timeline content on your site. 
- * Version: 1.1.6
+ * Version: 1.2.0
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -90,7 +90,7 @@ if ( function_exists( 'tlgb_fs' ) ) {
         }
         // Conditional CPT Block
         if ( TLGB_HAS_PRO && tlgbIsPremium() ) {
-            include_once TLGB_DIR_PATH . 'b-timeline/b-titmeline.php';
+            include_once TLGB_DIR_PATH . 'b-timeline/b-timeline.php';
         }
         class TLGBPlugin {
             public function __construct() {
