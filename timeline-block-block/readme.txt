@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags: block, timeline, vertical timeline, horizontal timeline, widget
 Requires at least: 6.5+
 Tested up to: 6.8
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -118,8 +118,11 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Changelog ==
 
-= 1.2.2 - 23 July 2025 = 
-* fixed issues
+= 1.2.3 - 15 September, 2025 = 
+* Add Modern Dashboard & Fixed Issues
+
+= 1.2.2  = 
+* Fixed Issues
 
 = 1.2.1 - 15 May 2025 = 
 * Fixed text domain issue and seo problem

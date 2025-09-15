@@ -20,22 +20,21 @@ if (!class_exists('TLGBAdminMenu')) {
       );
     }
 
-    function renderTemplate($content)  {
-      $parseBlocks = parse_blocks($content);
-      return render_block($parseBlocks[0]);
-    }
-
     function renderPage() {
       ?>
-      <div id="bplAdminHelpPage" data-version="<?php echo esc_attr(TLGB_VERSION); ?>"  data-is-premium='<?php echo esc_attr(tlgbIsPremium()); ?>'></div>
+       <div id="tlgbAdminDashboardWrapper"
+            data-info='<?php echo esc_attr( wp_json_encode( [
+                'version' => TLGB_VERSION,
+                'isPremium' => esc_attr(tlgbIsPremium()),
+            ] ) ); ?>'>
+        </div>
       <?php
     }
 
     function adminEnqueueScripts($hook) {
       if ('tools_page_timeline-block' === $hook) {
-        wp_enqueue_style('tlgb-admin-help', TLGB_DIR_URL . 'build/admin-help.css', [], TLGB_VERSION);
-        wp_enqueue_script('tlgb-admin-help', TLGB_DIR_URL . 'build/admin-help.js', ['react', 'react-dom'], TLGB_VERSION, true);
-        wp_enqueue_script('tlgb-fs-file', TLGB_DIR_URL . 'assets/js/fs.js');
+        wp_enqueue_style('tlgb-admin-dashboard', TLGB_DIR_URL . 'build/admin-dashboard.css', [], TLGB_VERSION);
+        wp_enqueue_script('tlgb-admin-dashboard', TLGB_DIR_URL . 'build/admin-dashboard.js', ['react', 'react-dom'], TLGB_VERSION, true);
         wp_set_script_translations('tlgb-admin-help', 'timeline-block', TLGB_DIR_PATH . 'languages');
       }
     }
