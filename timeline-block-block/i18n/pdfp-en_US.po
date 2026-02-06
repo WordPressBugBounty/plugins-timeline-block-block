@@ -36,7 +36,7 @@ msgstr ""
 
 #: build/block.json
 msgctxt "block title"
-msgid "B Timeline Block"
+msgid "Timeline Block"
 msgstr ""
 
 #: build/block.json

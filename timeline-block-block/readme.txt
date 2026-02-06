@@ -1,10 +1,10 @@
-=== Timeline Block - Timeline Block Plugin for WordPress ===
+=== Timeline Block - Beautiful Timeline Builder for WordPress (Vertical & Horizontal Timelines) ===
 Contributors: bplugins, abuhayat, taninrahman, charlescormier, freemius
 Donate link: https://www.buymeacoffee.com/abuhayat
-Tags: block, timeline, vertical timeline, horizontal timeline, widget
+Tags:  block, timeline, vertical timeline, horizontal timeline, timeline builder
 Requires at least: 6.5+
-Tested up to: 6.8
-Stable tag: 1.2.3
+Tested up to: 6.9
+Stable tag: 1.3.5
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -13,12 +13,14 @@ Design Timeline with ease! Featuring 7 customizable themes in both horizontal an
 
 == Description ==
 
+**Design Stunning WordPress Timelines Without Writing a Single Line of Code.**
+
 The Timeline Block Plugin is your ultimate solution for creating visually stunning and fully customizable timelines in WordPress. With 6 unique themes, each supporting both horizontal and vertical layouts, this plugin offers unparalleled flexibility to showcase your stories, projects, milestones, or events in a captivating format.
 
 Designed with user-friendliness in mind, the Timeline Block Plugin empowers you to effortlessly add, edit, and style your timeline directly in the WordPress editor. Customize colors, fonts, icons, and more to align perfectly with your brand or website design. Whether you're creating a project roadmap, a personal story, or a historical timeline, the plugin adapts to your needs with precision. 
 
 
-**[Demos](https://bblockswp.com/demo/timeline/)** **[Demos](https://bplugins.com/products/b-timeline/#pricing)**
+[**Timeline Block**](https://bplugins.com/products/timeline-block/) | [**Pricing**](https://bplugins.com/products/timeline-block/pricing/) | [**Support**](https://bplugins.com/support/) | [**Demo**]((https://bblockswp.com/demo/timeline-block-all-demos/))
 
 
 = Key Features =
@@ -31,7 +33,7 @@ Designed with user-friendliness in mind, the Timeline Block Plugin empowers you 
 
 = Pro Features =
 - **Add Shortcode API**: You can access a very powerful shortcode plugin which have some incredible features and you can use anywhere this plugin by using this features.
-- **Six Extra Themes**: Access six more professionally designed themes, some themes supporting both horizontal and vertical layouts.
+- **Seven Extra Themes**: Access seven more professionally designed themes, some themes supporting both horizontal and vertical layouts.
 - **Classic Editor for Descriptions**: Edit timeline descriptions beautifully with the integrated classic editor, providing advanced formatting options.
 - **Customizable Icons**: Add unique icons to your timeline items and style them to create a polished, professional look.
 - **Enhanced Customization Options**: Fine-tune every aspect of your timeline for ultimate design control.
@@ -39,7 +41,7 @@ Designed with user-friendliness in mind, the Timeline Block Plugin empowers you 
  
 = How to use =
 - First, install the *Timeline Block* plugin
-- Add the *B Timeline Block* block from the block category called "Widgets" in the Gutenberg editor.
+- Add the *Timeline Block* block from the block category called "Widgets" in the Gutenberg editor.
 - You can change block settings from the right-side settings sidebar.
 - Enjoy!
 
@@ -110,13 +112,49 @@ You can use unlimited times as you want.
 
 You can post your questions on the [support forum here](https://wordpress.org/support/plugin/timeline-block-block/)
 
+= Where do I report security bugs found in this plugin? =
+
+Please report security bugs found in the source code of the Timeline Block plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/9e5fb645-ef15-4628-91b6-de61c8ef0e78). The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
+
 
 == Screenshots ==
 
-1. All Block Directory
+1. Timeline Block ShortCodes
+2. Add New Timeline Block ShortCode
+3. Default Timeline
+4. Template 1
+5. Template 2
+6. Template 3
+7. Template 4
+8. Template 5
+9. Template 6
+10. Template 7
 
 
 == Changelog ==
+
+= 1.3.5 - 27 January 2026 = 
+* Fixed horizontal timeline issue
+* Optimize plugin files & increase code readability
+
+= 1.3.4 - 24 January 2026 = 
+* Fixed vulnerability issue
+
+= 1.3.3 - 18 November 2025 = 
+* fixed issues
+
+= 1.3.2 - 13 November 2025 = 
+* updated freemius version and readme.txt
+
+= 1.3.1 - 5 November 2025 = 
+* Updated freemius-lite sdk
+
+= 1.3.0 - 20 October, 2025 = 
+* Add timeline block shortcode
+* Modified the plugin. 
+
+= 1.2.4 - 6 October, 2025 = 
+* Add New Timeline Template
 
 = 1.2.3 - 15 September, 2025 = 
 * Add Modern Dashboard & Fixed Issues
@@ -174,6 +212,10 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Upgrade Notice ==
 
+= 1.3.5 - 27 January 2026 = 
+* Fixed horizontal timeline issue
+* Optimize plugin files & increase code readability
+
 = 1.1.3 - 8 Feb 2025 =
 * Fixed Issues.
 
@@ -208,3 +250,5 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 = 1.0.0 =
 * Initial Release
+
+

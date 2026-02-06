@@ -213,7 +213,7 @@ msgstr ""
 
 #: inc/block.json
 msgctxt "block title"
-msgid "B Timeline Block"
+msgid "Timeline Block"
 msgstr ""
 
 #: inc/block.json
