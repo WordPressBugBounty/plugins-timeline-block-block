@@ -35,10 +35,6 @@ if(!class_exists('TLGBTimeline')){
 				return '<p>Timeline not found.</p>';
 			}
 
-			if ( ! current_user_can( 'read_post', $post_id ) ) {
-				return '<p>You are not allowed to view this timeline.</p>';
-			}
-
 			$blocks = parse_blocks( $post->post_content );
 
 			if ( empty( $blocks ) ) {
