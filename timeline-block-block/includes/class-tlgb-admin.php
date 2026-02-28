@@ -11,8 +11,8 @@ if (!class_exists('TLGBAdminMenu')) {
     public function adminMenu() {
       add_submenu_page(
         'edit.php?post_type=timeline_block',
-        'Demo & Help',
-        'Demo & Help',
+        'Help & Demos',
+        'Help & Demos',
         'manage_options',
         'tlgb-dashboard',
         [$this, 'renderPage'],
@@ -22,13 +22,14 @@ if (!class_exists('TLGBAdminMenu')) {
 
     public function renderPage() {
       ?>
-       <div id="tlgbAdminDashboardWrapper"
-            data-info='<?php echo esc_attr( wp_json_encode( [
-                'version' => TLGB_VERSION,
-                'isPremium' => esc_attr(tlgbIsPremium()),
-                'adminUrl' => admin_url()
-            ] ) ); ?>'>
-        </div>
+      <div id="tlgbAdminDashboardWrapper"
+          data-info='<?php echo esc_attr( wp_json_encode( [
+              'version' => TLGB_VERSION,
+              'isPremium' => tlgbIsPremium(),
+              'hasPro' => TLGB_HAS_PRO,
+              'licenseActiveNonce' => wp_create_nonce( 'bPlLicenseActivation' )
+          ] ) ); ?>'
+      ></div>
       <?php
     }
     
@@ -40,7 +41,8 @@ if (!class_exists('TLGBAdminMenu')) {
       }
       if ('timeline_block_page_tlgb-dashboard' === $hook) {
         wp_enqueue_style('tlgb-admin-dashboard', TLGB_DIR_URL . 'build/admin-dashboard.css', [], TLGB_VERSION);
-        wp_enqueue_script('tlgb-admin-dashboard', TLGB_DIR_URL . 'build/admin-dashboard.js', ['react', 'react-dom'], TLGB_VERSION, true);
+        $asset_file = include TLGB_DIR_PATH . 'build/admin-dashboard.asset.php';
+        wp_enqueue_script('tlgb-admin-dashboard', TLGB_DIR_URL . 'build/admin-dashboard.js', array_merge($asset_file['dependencies'], ['wp-util']), TLGB_VERSION, true);
         wp_set_script_translations('tlgb-admin-help', 'timeline-block', TLGB_DIR_PATH . 'languages');
       }
     }

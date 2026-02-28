@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Timeline Block
  * Description: Display timeline content on your site. 
- * Version: 1.3.6
+ * Version: 1.3.7
  * Author: bPlugins
  * Author URI: https://bplugins.com
  * License: GPLv3
@@ -18,7 +18,7 @@ if ( function_exists( 'tlgb_fs' ) ) {
     tlgb_fs()->set_basename( false, __FILE__ );
 } else {
     // Constant
-    define( 'TLGB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.3.6' ) );
+    define( 'TLGB_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.3.7' ) );
     define( 'TLGB_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'TLGB_DIR_PATH', plugin_dir_path( __FILE__ ) );
     define( 'TLGB_HAS_FREE', 'timeline-block-block/plugin.php' === plugin_basename( __FILE__ ) );
@@ -44,7 +44,7 @@ if ( function_exists( 'tlgb_fs' ) ) {
                     'premium_slug'        => 'timeline-block-block-pro',
                     'type'                => 'plugin',
                     'public_key'          => 'pk_624005a9d0c56ff46db6602f5f730',
-                    'is_premium'          => true,
+                    'is_premium'          => false,
                     'premium_suffix'      => 'Pro',
                     'has_premium_version' => true,
                     'has_addons'          => false,

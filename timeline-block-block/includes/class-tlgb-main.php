@@ -7,7 +7,10 @@ if(!class_exists('TLGBTimeline')){
     }
   
     public static function load_dependencies() {
-      require_once TLGB_DIR_PATH. 'class-tlgb-block.php';
+      if(TLGB_HAS_PRO) {
+        require_once TLGB_DIR_PATH . 'includes/class-tlgb-license-activation.php';
+      }
+      require_once TLGB_DIR_PATH . 'class-tlgb-block.php';
       require_once TLGB_DIR_PATH . 'includes/functions.php';
       require_once TLGB_DIR_PATH . 'includes/class-tlgb-cpt.php';
       include_once TLGB_DIR_PATH . 'includes/class-tlgb-admin.php';

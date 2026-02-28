@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags:  block, timeline, vertical timeline, horizontal timeline, timeline builder
 Requires at least: 6.5+
 Tested up to: 6.9
-Stable tag: 1.3.6
+Stable tag: 1.3.7
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -132,6 +132,9 @@ Please report security bugs found in the source code of the Timeline Block plugi
 
 
 == Changelog ==
+
+= 1.3.7 - 28 February 2026 =
+* **Update:** Redesigned the dashboard with a modern and improved user interface, replacing the previous outdated layout.
 
 = 1.3.6 - 15 February 2026 = 
 * **Fixed: **Removed unnecessary login restriction for shortcode display.
