@@ -1,21 +1,21 @@
-=== Timeline Block - Beautiful Timeline Builder for WordPress (Vertical & Horizontal Timelines) ===
-Contributors: bplugins, abuhayat, taninrahman, charlescormier, freemius, prosanta10
+===  Timeline Block - Beautiful Timeline Builder ===
+Contributors: bplugins, abuhayat, taninrahman, freemius, prosanta10
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags:  block, timeline, vertical timeline, horizontal timeline, timeline builder
-Requires at least: 6.5+
+Requires at least: 6.3
 Tested up to: 6.9
-Stable tag: 1.4.0
-Requires PHP: 7.1
-License: GPLv3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Stable tag: 1.5.1
+Requires PHP: 7.4
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.txt
 
-Design Timeline with ease! Featuring 10 customizable themes in both horizontal and vertical layouts,lets you showcase your stories,events,or projects. 
+Design beautiful timelines with ease! Free customizable themes in horizontal and vertical layouts to showcase stories, events, or projects. 
 
 == Description ==
 
 **Design Stunning WordPress Timelines Without Writing a Single Line of Code.**
 
-The Timeline Block Plugin is your ultimate solution for creating visually stunning and fully customizable timelines in WordPress. With 6 unique themes, each supporting both horizontal and vertical layouts, this plugin offers unparalleled flexibility to showcase your stories, projects, milestones, or events in a captivating format.
+The Timeline Block Plugin is your ultimate solution for creating visually stunning and fully customizable timelines in WordPress. With 2 free unique themes (and 8 more in Premium Version of this plugin), each supporting both horizontal and vertical layouts, this plugin offers unparalleled flexibility to showcase your stories, projects, milestones, or events in a captivating format.
 
 Designed with user-friendliness in mind, the Timeline Block Plugin empowers you to effortlessly add, edit, and style your timeline directly in the WordPress editor. Customize colors, fonts, icons, and more to align perfectly with your brand or website design. Whether you're creating a project roadmap, a personal story, or a historical timeline, the plugin adapts to your needs with precision. 
  
@@ -23,7 +23,7 @@ Designed with user-friendliness in mind, the Timeline Block Plugin empowers you 
 [**Timeline Block**](https://bplugins.com/products/timeline-block/) | [**Pricing**](https://bplugins.com/products/timeline-block/pricing/) | [**Support**](https://bplugins.com/support/) | [**Demo**]((https://bblockswp.com/demo/timeline-block-all-demos/))
 
 = Key Features =
-- **Default Theme**: Customize the default theme to match your style and preferences.
+- **Two Free Themes**: Customize the default theme to match your style and preferences.
 - **Timeline Type**: Easily switch between horizontal and vertical layouts in the default theme.
 - **Start Index**: Set the starting position (left or right) for both horizontal and vertical timelines.
 - **Display Item**: Choose how many items to display in the horizontal timeline for a tailored view.
@@ -32,7 +32,7 @@ Designed with user-friendliness in mind, the Timeline Block Plugin empowers you 
 
 = Pro Features =
 - **Add Shortcode API**: You can access a very powerful shortcode plugin which have some incredible features and you can use anywhere this plugin by using this features.
-- **Nine Extra Themes**: Access Nine more professionally designed themes, some themes supporting both horizontal and vertical layouts.
+- **Eight Extra Themes**: Access Eight more professionally designed themes, some themes supporting both horizontal and vertical layouts.
 - **Classic Editor for Descriptions**: Edit timeline descriptions beautifully with the integrated classic editor, providing advanced formatting options.
 - **Customizable Icons**: Add unique icons to your timeline items and style them to create a polished, professional look.
 - **Enhanced Customization Options**: Fine-tune every aspect of your timeline for ultimate design control.
@@ -75,25 +75,25 @@ Designed with user-friendliness in mind, the Timeline Block Plugin empowers you 
 
 = From Gutenberg Editor: =
 1. Go to the WordPress Block/Gutenberg Editor
-2. Search For **Block Directory**
-3. Click on the **Block Directory** to add the block
+2. Search For **Timeline Block**
+3. Click on the **Timeline Block** to add the block
 
 = Download & Upload: =
-1. Download the **Block Directory** plugin (*.zip file*)
+1. Download the **Timeline Block** plugin (*.zip file*)
 2. In your admin area, go to the Plugins menu and click on **Add New**
 3. Click on **Upload Plugin** and choose the **`timeline-block.zip`** file and click on **Install Now**
 4. Activate the plugin and Enjoy!
 
 = Manually: =
-1. Download and upload the **Block Directory** plugin to the **`/wp-content/plugins/`** directory
+1. Download and upload the **Timeline Block** plugin to the **`/wp-content/plugins/`** directory
 2. Activate the plugin through the Plugins menu in WordPress
 
 
 == Frequently Asked Questions ==
 
-= Is Block Directory free? =
+= Is Timeline Block free? =
 
-Yes, Block Directory is a free Gutenberg block plugin.
+Yes, Timeline Block is a free Gutenberg block plugin.
 
 = Does it work with any WordPress theme? =
 
@@ -133,6 +133,26 @@ Please report security bugs found in the source code of the Timeline Block plugi
 
 
 == Changelog ==
+
+= 1.5.1 - 18 May 2026 = 
+* Fixed stored XSS security vulnerability in timeline content rendering.
+* Updated text domain to match plugin slug for proper translation support.
+* Fixed JavaScript translation loading issues.
+* Added missing internationalization support for CPT labels and admin strings.
+* Optimized frontend asset loading and improved performance.
+* Improved shortcode validation and uninstall cleanup process.
+* Fixed readme content issues and minor code quality problems.
+* General security, compatibility, and stability improvements.
+
+
+= 1.5.0 - 11 May 2026 =
+* Naming issue - The plugin name was too generic or implied false affiliation. Updated the name to comply with guidelines.
+* Compliance: Removed all trialware/feature-gating logic to ensure full functionality for all users.
+* Fixed - Fixed the unconditional loading of Freemius SDK to ensure telemetry is opt-in only.
+* Enhancement: Added explicit "External Services" and "Source Code" documentation in readme.txt.
+* Fixed - Requires at least" value was using an invalid format (e.g., "6.5+"). Corrected it.
+* Fixed - Editor block apiVersion was outdated (apiVersion 1). Updated to apiVersion 3.
+* Fixed - Allowed direct file access - Added `defined( 'ABSPATH' ) || exit;` to PHP files to prevent direct execution.
 
 = 1.4.0 - 13 April 2026 =
 * **Update:** Add animation options and two new theme.
@@ -221,45 +241,53 @@ Please report security bugs found in the source code of the Timeline Block plugi
 * Initial Release
 
 
-== Upgrade Notice ==
 
-= 1.3.5 - 27 January 2026 = 
-* Fixed horizontal timeline issue
-* Optimize plugin files & increase code readability
+== Source Code ==
 
-= 1.1.3 - 8 Feb 2025 =
-* Fixed Issues.
-
-= 1.1.2 =
-* Fixed Issues.
-
-= 1.1.1 - 27 Jan 2025 =
-* Update SDK version.
-
-= 1.1.0 - 16 Jan 2025 =
-* Upload v1.1.0 - upload a premium version with some incredible features.
-
-= 1.0.7 - 14 Feb 2024 =
-* Fix issue
-
-= 1.0.6 =
-* Fix issue
-
-= 1.0.5 =
-* Add text area to write HTML.
-
-= 1.0.4 =
-* Fix Start Index and Visible Items
-
-= 1.0.3 =
-* Fix mobile not showing
-
-= 1.0.2 =
-* Remove jQuery dependency
-* Remove, Duplicate and Add a timeline from the toolbar
-* Translate support
-
-= 1.0.0 =
-* Initial Release
+You can find the source code, report bugs, and contribute to the development of this plugin on our GitHub repository:
+[**Timeline Block on GitHub**](https://github.com/bPlugins/timeline-block-free)
 
 
+== External Services ==
+
+This plugin bundles the following third-party JavaScript/PHP libraries.
+
+= SVG Icons (Font Awesome, Lucide, etc.) =
+* **Purpose:** Provides scalable vector icons used for UI elements.
+* **Note:** This plugin does not load the full Font Awesome or Lucide libraries. Instead, specific icons are included directly as inline SVGs in the source code to keep the plugin lightweight and performant.
+
+= Freemius Lite SDK =
+* **Version:** 2.2.0
+* **Source:** [https://bplugins.com/](https://bplugins.com/)
+* **GitHub:** [https://github.com/bPlugins/freemius-lite-sdk](https://github.com/bPlugins/freemius-lite-sdk)
+* **License:** GPL-2.0-or-later – [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
+* **Purpose:** Provides an opt-in consent form for usage tracking and analytics to help improve the plugin. No data is sent before explicit user consent.
+* **External Services:** Communicates with `api.bplugins.com` (activation events) and `wp.freemius.com` (opt-in processing) only after user opt-in. See [bPlugins Privacy Policy](https://bplugins.com/privacy-policy) and [Freemius Privacy Policy](https://freemius.com/privacy/).
+
+= Timeline =
+* **Version:** 1.2.0
+* **Source:** assets/js/timeline.min.js, assets/css/timeline.min.css
+* **Author:** Mike Collins
+* **License:** MIT
+* **Purpose:** A horizontal / vertical timeline component used for rendering timelines on the frontend.
+
+= YouTube =
+* **Source:** https://www.youtube.com/
+* **Purpose:** Used to display documentation and tutorial videos in the admin dashboard.
+* **Privacy:** Loading or interacting with the video player connects to YouTube servers and is subject to YouTube's privacy policy.
+
+
+== Third-Party Libraries ==
+
+= Immer =
+* **Version:** 11.1.8
+* **Source:** https://immerjs.github.io/immer/
+* **GitHub:** https://github.com/immerjs/immer
+* **License:** MIT
+* **Purpose:** Used for managing immutable state in a more convenient way.
+
+= bpl-tools =
+* Source / GitHub: https://github.com/bPlugins/bpl-tools
+* License: GPL-2.0-or-later – https://www.gnu.org/licenses/gpl-2.0.html
+* Purpose: Shared utility library providing admin dashboard components and common Gutenberg editor controls.
+* External Services: The library may connect to bPlugins, WordPress.org, and Freemius services for product data and checkout functionality. See full details: https://github.com/bPlugins/bpl-tools#external-requests--why-they-are-made

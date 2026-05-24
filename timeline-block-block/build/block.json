@@ -1,14 +1,14 @@
 {
-  "apiVersion": "1",
+  "apiVersion": 3,
   "name": "tlgb/b-timeline-block",
   "title": "Timeline Block",
-  "version": "1.4.0",
+  "version": "1.5.1",
   "description": "Show your story or Memories on the web.",
   "category": "widgets",
   "keywords": [
     "timeline",
-    "timeline",
-    "timeline-block"
+    "timeline-block",
+    "animation-timeline"
   ],
   "textdomain": "timeline-block",
   "attributes": {
@@ -57,6 +57,10 @@
     "startIndex": {
       "type": "number",
       "default": 1
+    },
+    "visibleItems": {
+      "type": "number",
+      "default": 4
     },
     "vigibleItems": {
       "type": "number",
@@ -163,116 +167,6 @@
           "color": "#06b6d4"
         }
       }
-    },
-    "iconStyles": {
-      "type": "object",
-      "default": {
-        "iconColor": "orangered",
-        "iconColorHover": "red",
-        "iconSize": 40,
-        "iconContainerSize": 40,
-        "background": {
-          "normal": {
-            "color": "white"
-          },
-          "hover": {
-            "color": "red"
-          }
-        },
-        "borderControl": {
-          "width": "1px",
-          "color": "rgba(18, 235, 195, 1)",
-          "style": "inset"
-        },
-        "iconBorderHover": "1px solid #efefef"
-      }
-    },
-    "theme8CardBorder": {
-      "type": "object",
-      "default": {
-        "width": "3px",
-        "style": "solid",
-        "color": "#111111"
-      }
-    },
-    "theme8CardShadow": {
-      "type": "object",
-      "default": {
-        "offsetX": 5,
-        "offsetY": 5,
-        "color": "#111111"
-      }
-    },
-    "theme8Animation": {
-      "type": "object",
-      "default": {
-        "enabled": true,
-        "type": "slide-up",
-        "duration": 600,
-        "delay": 120
-      }
-    },
-    "theme3Animation": {
-      "type": "object",
-      "default": {
-        "enabled": true,
-        "type": "slide-up",
-        "duration": 600,
-        "delay": 120
-      }
-    },
-    "theme5Animation": {
-      "type": "object",
-      "default": {
-        "enabled": true,
-        "type": "slide-up",
-        "duration": 600,
-        "delay": 120
-      }
-    },
-    "theme4Animation": {
-      "type": "object",
-      "default": {
-        "enabled": true,
-        "type": "slide-up",
-        "duration": 600,
-        "delay": 120
-      }
-    },
-    "accordionAnimation": {
-      "type": "object",
-      "default": {
-        "enabled": true,
-        "type": "slide-up",
-        "duration": 600,
-        "delay": 120
-      }
-    },
-    "theme9Animation": {
-      "type": "object",
-      "default": {
-        "enabled": true,
-        "type": "slide-up",
-        "duration": 600,
-        "delay": 120
-      }
-    },
-    "theme9CenturyStyles": {
-      "type": "object",
-      "default": {
-        "color": "#ffffff",
-        "bg": "#1a1a1a",
-        "borderColor": "#ffffff",
-        "borderWidth": 4,
-        "borderRadius": 50,
-        "centuryTypo": {
-          "fontSize": {
-            "desktop": 24,
-            "tablet": 24,
-            "mobile": 20
-          }
-        }
-      }
     }
   },
   "supports": {
@@ -287,15 +181,16 @@
       "preview": true
     }
   },
-  "editorScript": [
-    "file:./index.js",
-    "wp-api"
-  ],
+  "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
-  "style": "file:./view.css",
+  "style": [
+    "file:./view.css",
+    "tlgb-timeline-css"
+  ],
   "render": "file:./render.php",
   "viewScript": [
     "file:./view.js",
+    "tlgb-timeline-js",
     "react",
     "react-dom"
   ]

@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit;
 if(!class_exists('TLGBTimeline')){
   class TLGBTimeline {
     public function __construct() {
@@ -7,19 +8,16 @@ if(!class_exists('TLGBTimeline')){
     }
   
     public static function load_dependencies() {
-      if(TLGB_HAS_PRO) {
-        require_once TLGB_DIR_PATH . 'includes/class-tlgb-license-activation.php';
-      }
       require_once TLGB_DIR_PATH . 'class-tlgb-block.php';
-      require_once TLGB_DIR_PATH . 'includes/functions.php';
       require_once TLGB_DIR_PATH . 'includes/class-tlgb-cpt.php';
       include_once TLGB_DIR_PATH . 'includes/class-tlgb-admin.php';
-      // $b_timeline = TLGB_DIR_PATH . 'b-timeline/b-timeline.php';
-      $timeline = TLGB_DIR_PATH . 'b-timeline/class-bptl-main.php';
-      if (tlgbIsPremium() && file_exists($timeline)) {
-        include_once $timeline;
-      }
-    }
+      include_once TLGB_DIR_PATH . 'includes/class-tlgb-options.php';
+
+      new TLGBPlugin();
+      new TLGBCpt();
+      new TLGBAdminMenu();
+      new TLGBOptions();
+    } 
   
     public static function tlgb_shortcode($atts) {
       $atts = shortcode_atts([
@@ -29,19 +27,26 @@ if(!class_exists('TLGBTimeline')){
 			$post_id = absint( $atts['id'] );
 
 			if ( ! $post_id ) {
-				return '<p>Invalid timeline ID.</p>';
+				return '<p>' . esc_html__( 'Invalid timeline ID.', 'timeline-block' ) . '</p>';
 			}
 
 			$post = get_post( $post_id );
 
-			if ( ! $post || $post->post_type !== 'timeline_block' ) {
-				return '<p>Timeline not found.</p>';
+			if ( ! $post || 'timeline_block' !== $post->post_type ) {
+				return '<p>' . esc_html__( 'Timeline not found.', 'timeline-block' ) . '</p>';
+			}
+
+			$is_published = 'publish' === $post->post_status;
+			$is_private_allowed = 'private' === $post->post_status && current_user_can( 'read_post', $post_id );
+
+			if ( ! $is_published && ! $is_private_allowed ) {
+				return '<p>' . esc_html__( 'Timeline not found.', 'timeline-block' ) . '</p>';
 			}
 
 			$blocks = parse_blocks( $post->post_content );
 
 			if ( empty( $blocks ) ) {
-				return '<p>No timeline content found.</p>';
+				return '<p>' . esc_html__( 'No timeline content found.', 'timeline-block' ) . '</p>';
 			}
 
 			foreach ( $blocks as $block ) {
@@ -50,7 +55,7 @@ if(!class_exists('TLGBTimeline')){
 				}
 			}
 
-			return '<p>Timeline block not found in this post.</p>';
+			return '<p>' . esc_html__( 'Timeline block not found in this post.', 'timeline-block' ) . '</p>';
     } 
   }
 }
