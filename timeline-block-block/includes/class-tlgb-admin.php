@@ -25,6 +25,9 @@ if (!class_exists('TLGBAdminMenu')) {
       <div id="tlgbAdminDashboardWrapper"
           data-info='<?php echo esc_attr( wp_json_encode( [
               'version' => TLGB_VERSION,
+              'isPremium' => tlgb_fs()->can_use_premium_code(),
+              'hasPro' => tlgb_fs()->is_premium(),
+              'adminUrl' => admin_url(),
               'deleteDataOnUninstall' => TLGBOptions::getOptions()['delete_data_on_uninstall'],
               'uninstallNonce' => wp_create_nonce( 'tlgbSaveUninstallOption' ),
           ] ) ); ?>'

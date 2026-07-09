@@ -1,17 +1,17 @@
 ===  Timeline Block - Beautiful Timeline Builder ===
-Contributors: bplugins, abuhayat, taninrahman, freemius, prosanta10
+Contributors: bplugins, abuhayat, freemius, prosanta10
 Donate link: https://www.buymeacoffee.com/abuhayat
 Tags:  block, timeline, vertical timeline, horizontal timeline, timeline builder
-Requires at least: 6.3
-Tested up to: 6.9
-Stable tag: 1.5.1
+Requires at least: 6.5
+Tested up to: 7.0
+Stable tag: 1.5.3
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.txt
 
 Design beautiful timelines with ease! Free customizable themes in horizontal and vertical layouts to showcase stories, events, or projects. 
 
-== Description ==
+== Description == 
 
 **Design Stunning WordPress Timelines Without Writing a Single Line of Code.**
 
@@ -132,7 +132,12 @@ Please report security bugs found in the source code of the Timeline Block plugi
 12. Template 9
 
 
-== Changelog ==
+== Changelog == 
+
+= 1.5.3 - 09 July 2026 = 
+* Added support for WordPress 7.0.
+* Improved performance and stability.
+* Added two Premium Themes and AI Generate Timeline Content (Pro).
 
 = 1.5.1 - 18 May 2026 = 
 * Fixed stored XSS security vulnerability in timeline content rendering.
