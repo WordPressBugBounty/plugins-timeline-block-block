@@ -4,7 +4,7 @@ Donate link: https://www.buymeacoffee.com/abuhayat
 Tags:  block, timeline, vertical timeline, horizontal timeline, timeline builder
 Requires at least: 6.5
 Tested up to: 7.0
-Stable tag: 1.5.3
+Stable tag: 1.5.4
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.txt
@@ -133,6 +133,9 @@ Please report security bugs found in the source code of the Timeline Block plugi
 
 
 == Changelog == 
+
+= 1.5.4 - 26 July 2026 =
+* Improved design and layout of the timeline block.
 
 = 1.5.3 - 09 July 2026 = 
 * Added support for WordPress 7.0.
