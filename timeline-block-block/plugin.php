@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Timeline Block - Beautiful Timeline Builder
  * Description: Display timeline content on your site.
- * Version: 1.5.3
+ * Version: 1.5.4
  * Requires at least: 6.5
  * Tested up to: 7.0
  * Author: bPlugins
@@ -24,7 +24,7 @@ if (function_exists('tlgb_fs')) {
 } else {
   // Constant
   $tlgb_http_host = isset( $_SERVER['HTTP_HOST'] ) ? sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) : '';
-  define( 'TLGB_VERSION', 'localhost' === $tlgb_http_host ? time() : '1.5.3' );
+  define( 'TLGB_VERSION', 'localhost' === $tlgb_http_host ? time() : '1.5.4' );
   define('TLGB_DIR_URL', plugin_dir_url(__FILE__));
   define('TLGB_DIR_PATH', plugin_dir_path(__FILE__));
   
