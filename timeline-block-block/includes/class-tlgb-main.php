@@ -12,11 +12,13 @@ if(!class_exists('TLGBTimeline')){
       require_once TLGB_DIR_PATH . 'includes/class-tlgb-cpt.php';
       include_once TLGB_DIR_PATH . 'includes/class-tlgb-admin.php';
       include_once TLGB_DIR_PATH . 'includes/class-tlgb-options.php';
+      include_once TLGB_DIR_PATH . 'includes/class-tlgb-ajax.php';
 
       new TLGBPlugin();
       new TLGBCpt();
       new TLGBAdminMenu();
       new TLGBOptions();
+      new TLGBAjax();
     } 
   
     public static function tlgb_shortcode($atts) {

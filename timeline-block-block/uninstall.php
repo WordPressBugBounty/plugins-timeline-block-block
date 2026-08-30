@@ -30,6 +30,7 @@ function tlgb_uninstall_plugin() {
 		}
 	}
 	delete_option( 'tlgb_options' );
-} 
+	delete_option( 'tlgb_disabled_blocks' );
+}
 
 tlgb_uninstall_plugin();

@@ -1,8 +1,8 @@
 === Timeline Block – tell your story with elegant timelines ===
 Contributors: bplugins, abuhayat, freemius, prosanta10
 Tags: block, timeline, vertical timeline, horizontal timeline, timeline builder
-Tested up to: 7.0
-Stable tag: 1.5.4
+Tested up to: 7.1
+Stable tag: 1.5.5
 Requires PHP: 7.4
 Requires at least: 6.5
 Donate link: https://www.buymeacoffee.com/abuhayat
@@ -17,7 +17,17 @@ Create beautiful horizontal and vertical timelines in Gutenberg. Customizable th
 
 [**Timeline Block**](https://bplugins.com/products/timeline-block/) | [**Pricing**](https://bplugins.com/products/timeline-block/pricing/) | [**Support**](https://bplugins.com/support/) | [**Demo**](https://bblockswp.com/demo/timeline-block-all-demos/)
 
+
+### What Is Timeline Block?
+
+**Timeline Block** is a WordPress timeline plugin that lets you create responsive vertical and horizontal timelines directly in the Gutenberg Block Editor.
+Use it to present company history, project milestones, product roadmaps, events, personal achievements, stories, development progress, or any content that works better in chronological order.
+
+Choose a timeline layout, add your content, customize the settings, and publish. No coding knowledge is required.
+
+
 = Key Features =
+
 - **Two Free Themes**: Customize the default theme to match your style and preferences.
 - **Timeline Type**: Easily switch between horizontal and vertical layouts in the default theme.
 - **Start Index**: Set the starting position (left or right) for both horizontal and vertical timelines.
@@ -26,13 +36,50 @@ Create beautiful horizontal and vertical timelines in Gutenberg. Customizable th
 
 
 = Pro Features =
-- **Add Shortcode API**: You can access a very powerful shortcode plugin which have some incredible features and you can use anywhere this plugin by using this features.
+
 - **Eight Extra Themes**: Access Eight more professionally designed themes, some themes supporting both horizontal and vertical layouts.
 - **Classic Editor for Descriptions**: Edit timeline descriptions beautifully with the integrated classic editor, providing advanced formatting options.
 - **Customizable Icons**: Add unique icons to your timeline items and style them to create a polished, professional look.
 - **Enhanced Customization Options**: Fine-tune every aspect of your timeline for ultimate design control.
 - **Animation**: Add animation to your timeline items.
+- **Dynamic Post Timeline Block**: Build automated timelines dynamically from any WordPress post type, filtered by taxonomy terms and author.
+- **Accordion Timeline Block**: Group collapsible timeline steps with custom status markers, icon choices, and smooth interactive expand/collapse toggles.
+- **Company History Timeline Block**: Feature a spotlit year card with a clickable year rail and optional auto-slide carousel navigation.
+- **Career Timeline Block**: Showcase work experience, education, and career achievements with specialized timeline layouts.
+- **Media Story Timeline Block**: Display rich media stories combining images, video highlights, and narrative timelines.
+- **Event Schedule Block**: Present event agendas, schedules, and multi-track session timelines clearly.
+- **Roadmap Timeline Block**: Organize product releases, project phases, and strategic milestones into clean roadmap views.
+- **Year Navigator Block**: Navigate historical timelines effortlessly year-by-year.
+- **AI Content Generator**: Generate timeline items, titles, and descriptions instantly using integrated AI tools.
+- **Load More Feature**: Add a customizable Load More button with initial item counts, per-click reveal limits, and custom styling.
+- **Add Shortcode API**: Embed timelines anywhere using a powerful shortcode system.
  
+
+= Why Choose Timeline Block? =
+Create beautiful and professional timelines without writing any code.
+
+- **Beautiful timeline layouts ** — Showcase stories, events, milestones, and projects with attractive horizontal and vertical timelines.
+- **Horizontal & vertical timeline support ** — Choose the perfect layout style to display your content.
+- **Ready-made timeline themes ** — Use professionally designed themes to create stunning timelines quickly.
+- **Easy Gutenberg integration ** — Add and customize timelines directly inside the WordPress block editor.
+- **Fully customizable design ** — Adjust colors, fonts, icons, and styling options to match your website.
+- **Shortcode support ** — Display your timelines anywhere on your WordPress website.
+- **Responsive timeline design ** — Looks great on desktop, tablet, and mobile devices.
+- **Lightweight & performance-friendly ** — Built for fast loading with optimized assets.
+
+
+= Common Use Cases =
+The plugin is useful for many types of WordPress websites: 
+
+✔ Company History: Highlight your business journey, achievements, and important milestones.
+✔ Project Roadmaps: Display development stages, future plans, and product milestones.
+✔ Product Launches: Showcase product releases, updates, and feature timelines.
+✔ Personal Portfolios: Create career journeys, biographies, and achievement timelines.
+✔ Educational Content: Present historical events, learning paths, and research timelines.
+✔ Event Schedules: Organize conferences, programs, and important dates visually.
+✔ Storytelling Websites: Create engaging visual stories with interactive timelines.
+
+
 = How to use =
 - First, install the *Timeline Block* plugin
 - Add the *Timeline Block* block from the block category called "Widgets" in the Gutenberg editor.
@@ -128,6 +175,16 @@ Please report security bugs found in the source code of the Timeline Block plugi
 
 
 == Changelog == 
+
+= 1.5.5 - 30 August 2026 =
+* Added Load More feature — set initial display count, per-click reveal count, and custom button styling.
+* Added Dynamic Post Timeline block — create timelines dynamically from any custom post type, filtered by taxonomy, terms, and author (Pro).
+* Added Accordion Timeline block — collapsible groups of steps with custom status markers and interactive toggle (Pro).
+* Added Company History Timeline block — interactive year card with clickable year rail and auto-slide navigation (Pro).
+* Added new feature blocks including Career Timeline, Media Story Timeline, Event Schedule, Roadmap Timeline, and Year Navigator.
+* Improved editor preview for Horizontal and Vertical layouts with real-time live preview synchronization.
+* Improved Accordion Timeline expand/collapse functionality in both editor and frontend.
+* Updated settings UI labels for Dot controls and styling options.
 
 = 1.5.4 - 26 July 2026 =
 * Improved design and layout of the timeline block.
