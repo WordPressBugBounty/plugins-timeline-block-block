@@ -2,7 +2,7 @@
 Contributors: bplugins, abuhayat, freemius, prosanta10
 Tags: block, timeline, vertical timeline, horizontal timeline, timeline builder
 Tested up to: 7.1
-Stable tag: 1.5.5
+Stable tag: 1.5.6
 Requires PHP: 7.4
 Requires at least: 6.5
 Donate link: https://www.buymeacoffee.com/abuhayat
@@ -37,6 +37,7 @@ Choose a timeline layout, add your content, customize the settings, and publish.
 
 = Pro Features =
 
+- **Pre-built Ready Templates**: Access 35+ pre-built ready templates for instant timeline designs.
 - **Eight Extra Themes**: Access Eight more professionally designed themes, some themes supporting both horizontal and vertical layouts.
 - **Classic Editor for Descriptions**: Edit timeline descriptions beautifully with the integrated classic editor, providing advanced formatting options.
 - **Customizable Icons**: Add unique icons to your timeline items and style them to create a polished, professional look.
@@ -53,7 +54,10 @@ Choose a timeline layout, add your content, customize the settings, and publish.
 - **AI Content Generator**: Generate timeline items, titles, and descriptions instantly using integrated AI tools.
 - **Load More Feature**: Add a customizable Load More button with initial item counts, per-click reveal limits, and custom styling.
 - **Add Shortcode API**: Embed timelines anywhere using a powerful shortcode system.
- 
+- **Slideshow Timeline Block**: Create slideshow timelines with autoplay and navigation controls.
+- **History Slider**: Create history timeline slider with autoplay and navigation controls.
+- **Story Slider**: Create story timeline slider with autoplay and navigation controls.
+
 
 = Why Choose Timeline Block? =
 Create beautiful and professional timelines without writing any code.
@@ -67,6 +71,90 @@ Create beautiful and professional timelines without writing any code.
 - **Responsive timeline design ** — Looks great on desktop, tablet, and mobile devices.
 - **Lightweight & performance-friendly ** — Built for fast loading with optimized assets.
 
+
+### Vertical Timeline
+
+Create vertical timelines for:
+
+- Company history
+- Career history
+- Personal achievements
+- Historical events
+- Project milestones
+- Educational content
+- Product development
+- Storytelling
+
+### Classic Editor for Descriptions
+
+Format timeline descriptions using the integrated classic editor.
+
+### Accordion Timeline
+
+Create collapsible timeline groups with:
+
+- Expand and collapse interactions
+- Custom status markers
+- Icon options
+- Grouped timeline steps
+
+### Company History Timeline
+
+Create year-based company history timelines with:
+
+- Year cards
+- Clickable year navigation
+- Timeline milestones
+- Optional automatic navigation
+
+### Media Story Timeline
+
+Combine media and narrative content in a chronological timeline.
+
+Use it for visual stories, project stories, events, and other media-rich content.
+
+### Event Schedule Timeline
+
+Organize event agendas, schedules, sessions, and program timelines.
+
+This can be useful for:
+
+- Conferences
+- Workshops
+- Events
+- Programs
+- Multi-session schedules
+
+### Roadmap Timeline
+
+Create product and project roadmaps for:
+
+- Product releases
+- Development stages
+- Project phases
+- Feature milestones
+- Future plans
+
+### Year Navigator
+
+Navigate timeline content year by year using a dedicated year navigation interface.
+
+### AI Timeline Content Generator
+
+Generate timeline items, titles, and descriptions using the integrated AI content generation feature.
+
+AI functionality may require supported configuration or services depending on the plugin version and setup.
+
+
+### Load More
+
+Add a Load More button to supported timelines.
+
+Configure:
+
+- Initial item count
+- Items revealed per click
+- Button styling
 
 = Common Use Cases =
 The plugin is useful for many types of WordPress websites: 
@@ -175,6 +263,12 @@ Please report security bugs found in the source code of the Timeline Block plugi
 
 
 == Changelog == 
+
+= 1.5.6 - 01 October 2026 =
+* Added 35+ pre-built ready templates in the Template Library for quick 1-click import. 
+* Added new Pro blocks including History Slider and Story Slider.
+* Improved template endpoints data sanitization and nonce verification security.
+* General performance, security, and stability enhancements.
 
 = 1.5.5 - 30 August 2026 =
 * Added Load More feature — set initial display count, per-click reveal count, and custom button styling.
