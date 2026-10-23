@@ -17,6 +17,7 @@ Create beautiful horizontal and vertical timelines in Gutenberg. Customizable th
 
 [**Timeline Block**](https://bplugins.com/products/timeline-block/) | [**Pricing**](https://bplugins.com/products/timeline-block/pricing/) | [**Support**](https://bplugins.com/support/) | [**Demo**](https://bblockswp.com/demo/timeline-block-all-demos/)
 
+Whether you need a company history timeline, an event schedule, a career timeline, or a product roadmap, Timeline Block provides tools to organize time-based content for your website.
 
 ### What Is Timeline Block?
 
