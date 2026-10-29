@@ -2,7 +2,7 @@
   "apiVersion": 3,
   "name": "tlgb/b-timeline-block",
   "title": "Timeline Block",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "Show your story or Memories on the web.",
   "category": "widgets",
   "keywords": [
@@ -16,7 +16,18 @@
     "timeline-horizontal",
     "progress-timeline",
     "timeline-blocks",
-    "ai-timeline"
+    "ai-timeline",
+    "history-timeline",
+    "roadmap-timeline",
+    "career-timeline",
+    "event-timeline",
+    "media-story-timeline",
+    "slideshow-timeline",
+    "story-timeline",
+    "history-slider",
+    "interactive-timeline",
+    "year-navigator-timeline",
+    "timeline-block-free"
   ],
   "textdomain": "timeline-block",
   "attributes": {

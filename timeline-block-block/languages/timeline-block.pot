@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Timeline Block - Beautiful Timeline Builder 1.5.6\n"
+"Project-Id-Version: Timeline Block - Beautiful Timeline Builder 1.5.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/timeline-block-block-free\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-30T11:35:41+00:00\n"
+"POT-Creation-Date: 2026-10-29T05:55:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: timeline-block\n"
@@ -37,6 +37,31 @@ msgstr ""
 #: includes/class-tlgb-admin.php:15
 #: includes/class-tlgb-admin.php:16
 msgid "Help & Demos"
+msgstr ""
+
+#: includes/class-tlgb-admin.php:27
+#: includes/class-tlgb-admin.php:99
+msgid "Timeline Analytics"
+msgstr ""
+
+#: includes/class-tlgb-admin.php:28
+msgid "Analytics"
+msgstr ""
+
+#: includes/class-tlgb-admin.php:28
+msgid "New"
+msgstr ""
+
+#: includes/class-tlgb-admin.php:100
+msgid "See views, engaged readers, read depth, completion rate and clicks for every timeline."
+msgstr ""
+
+#: includes/class-tlgb-admin.php:103
+msgid "Timeline Analytics dashboard preview"
+msgstr ""
+
+#: includes/class-tlgb-admin.php:107
+msgid "Premium Feature"
 msgstr ""
 
 #: includes/class-tlgb-ajax.php:26

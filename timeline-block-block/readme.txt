@@ -2,7 +2,7 @@
 Contributors: bplugins, abuhayat, freemius, prosanta10
 Tags: block, timeline, vertical timeline, horizontal timeline, timeline builder
 Tested up to: 7.1
-Stable tag: 1.5.6
+Stable tag: 1.5.7
 Requires PHP: 7.4
 Requires at least: 6.5
 Donate link: https://www.buymeacoffee.com/abuhayat
@@ -10,9 +10,9 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.txt
 
 Create beautiful horizontal and vertical timelines in Gutenberg. Customizable themes to showcase stories, events, projects, and milestones.
-
+ 
 == Description ==
-
+ 
 **Design stunning WordPress timelines without writing a single line of code – showcase your stories, projects, milestones, and events in a captivating format.**
 
 [**Timeline Block**](https://bplugins.com/products/timeline-block/) | [**Pricing**](https://bplugins.com/products/timeline-block/pricing/) | [**Support**](https://bplugins.com/support/) | [**Demo**](https://bblockswp.com/demo/timeline-block-all-demos/)
@@ -26,7 +26,6 @@ Use it to present company history, project milestones, product roadmaps, events,
 
 Choose a timeline layout, add your content, customize the settings, and publish. No coding knowledge is required.
 
-
 = Key Features =
 
 - **Two Free Themes**: Customize the default theme to match your style and preferences.
@@ -38,7 +37,7 @@ Choose a timeline layout, add your content, customize the settings, and publish.
 
 = Pro Features =
 
-- **Pre-built Ready Templates**: Access 35+ pre-built ready templates for instant timeline designs.
+- **Pre-built Ready Templates**: Access 45+ pre-built ready templates for instant timeline designs.
 - **Eight Extra Themes**: Access Eight more professionally designed themes, some themes supporting both horizontal and vertical layouts.
 - **Classic Editor for Descriptions**: Edit timeline descriptions beautifully with the integrated classic editor, providing advanced formatting options.
 - **Customizable Icons**: Add unique icons to your timeline items and style them to create a polished, professional look.
@@ -58,6 +57,10 @@ Choose a timeline layout, add your content, customize the settings, and publish.
 - **Slideshow Timeline Block**: Create slideshow timelines with autoplay and navigation controls.
 - **History Slider**: Create history timeline slider with autoplay and navigation controls.
 - **Story Slider**: Create story timeline slider with autoplay and navigation controls.
+- **Timeline Analytics**: Track analytics for your timelines.  
+- **Interactive Story Timeline**: Create interactive story timelines.
+- **Duplicate Timeline**: Duplicate any timeline as a draft.
+- **Sticky Rail on the Right**: Add a sticky rail on the right side of the Year Navigator block. 
 
 
 = Why Choose Timeline Block? =
@@ -263,7 +266,20 @@ Please report security bugs found in the source code of the Timeline Block plugi
 12. Template 9
 
 
-== Changelog == 
+== Changelog ==
+
+= 1.5.7 - 29 October 2026 =
+* Added Interactive Story Timeline block (Pro): big media slides with a zoomable, to-scale timeline, groups and eras.
+* Added Story Timeline JSON/CSV import and JSON export, plus BCE dates, slide links, keyboard and swipe (Pro).
+* Added Timeline Analytics dashboard (Pro): views, engaged readers, read depth, completion rate and clicks for every timeline.
+* Added click tracking (Pro) for links, buttons, tabs, arrows, lightbox, video, roadmap filters and Load More.
+* Added Analytics column with a View button in the shortcode list, opening that timeline's report (Pro).
+* Added Analytics panel in the block editor sidebar for every timeline block (Pro).
+* Added Split layout to Dynamic Post Timeline: image opposite the card, date badge and rail arrow (Pro).
+* Added Social Share to Dynamic Post Timeline (Pro).
+* Added Sticky Rail on the Right option to the Year Navigator block, alongside the existing left rail (Pro).
+* Added Duplicate option in the timeline shortcode list to copy any timeline as a draft (Pro).
+* Improved template library previews: real template screenshots in WebP, loaded only when they scroll into view (Pro).
 
 = 1.5.6 - 01 October 2026 =
 * Added 35+ pre-built ready templates in the Template Library for quick 1-click import. 
