@@ -2,7 +2,7 @@
 Contributors: bplugins, abuhayat, freemius, prosanta10
 Tags: block, timeline, vertical timeline, horizontal timeline, timeline builder
 Tested up to: 7.1
-Stable tag: 1.5.7
+Stable tag: 1.5.8
 Requires PHP: 7.4
 Requires at least: 6.5
 Donate link: https://www.buymeacoffee.com/abuhayat
@@ -10,12 +10,14 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.txt
 
 Create beautiful horizontal and vertical timelines in Gutenberg. Customizable themes to showcase stories, events, projects, and milestones.
- 
+
 == Description ==
  
 **Design stunning WordPress timelines without writing a single line of code – showcase your stories, projects, milestones, and events in a captivating format.**
 
 [**Timeline Block**](https://bplugins.com/products/timeline-block/) | [**Pricing**](https://bplugins.com/products/timeline-block/pricing/) | [**Support**](https://bplugins.com/support/) | [**Demo**](https://bblockswp.com/demo/timeline-block-all-demos/)
+
+Timeline Block helps you create beautiful vertical and horizontal timelines directly in the WordPress Gutenberg editor. Organize time-based content, highlight important milestones, and present your stories in a clear visual format without writing code.
 
 Whether you need a company history timeline, an event schedule, a career timeline, or a product roadmap, Timeline Block provides tools to organize time-based content for your website.
 
@@ -26,7 +28,9 @@ Use it to present company history, project milestones, product roadmaps, events,
 
 Choose a timeline layout, add your content, customize the settings, and publish. No coding knowledge is required.
 
-= Key Features =
+= Free Features =
+
+Get started with the essential tools for building WordPress timelines.
 
 - **Two Free Themes**: Customize the default theme to match your style and preferences.
 - **Timeline Type**: Easily switch between horizontal and vertical layouts in the default theme.
@@ -35,7 +39,9 @@ Choose a timeline layout, add your content, customize the settings, and publish.
 - **Insert HTML in timeline title**: Add custom HTML to enhance your timeline titles.
 
 
-= Pro Features =
+= Timeline Block Pro – Advanced Timeline Builder =
+
+Upgrade to Timeline Block Pro to access additional themes, ready-made templates, specialized timeline blocks, animation, dynamic content, and advanced customization.
 
 - **Pre-built Ready Templates**: Access 45+ pre-built ready templates for instant timeline designs.
 - **Eight Extra Themes**: Access Eight more professionally designed themes, some themes supporting both horizontal and vertical layouts.
@@ -62,19 +68,9 @@ Choose a timeline layout, add your content, customize the settings, and publish.
 - **Duplicate Timeline**: Duplicate any timeline as a draft.
 - **Sticky Rail on the Right**: Add a sticky rail on the right side of the Year Navigator block. 
 
+### 45+ Ready-Made Timeline Templates (Pro)
 
-= Why Choose Timeline Block? =
-Create beautiful and professional timelines without writing any code.
-
-- **Beautiful timeline layouts ** — Showcase stories, events, milestones, and projects with attractive horizontal and vertical timelines.
-- **Horizontal & vertical timeline support ** — Choose the perfect layout style to display your content.
-- **Ready-made timeline themes ** — Use professionally designed themes to create stunning timelines quickly.
-- **Easy Gutenberg integration ** — Add and customize timelines directly inside the WordPress block editor.
-- **Fully customizable design ** — Adjust colors, fonts, icons, and styling options to match your website.
-- **Shortcode support ** — Display your timelines anywhere on your WordPress website.
-- **Responsive timeline design ** — Looks great on desktop, tablet, and mobile devices.
-- **Lightweight & performance-friendly ** — Built for fast loading with optimized assets.
-
+Choose from a library of pre-built timeline templates to create timeline designs faster with ready-to-use layouts.
 
 ### Vertical Timeline
 
@@ -89,6 +85,21 @@ Create vertical timelines for:
 - Product development
 - Storytelling
 
+
+### Interactive Story Timeline (Pro)
+
+Create interactive, media-rich stories using a zoomable timeline with groups and eras. 
+
+ - Pro features include:
+ - Large media slides.
+ - Zoomable, to-scale timeline navigation.
+ - Timeline groups and eras.
+ - Story Timeline JSON and CSV import.
+ - JSON export.
+ - BCE date support.
+ - Slide links.
+ - Keyboard and swipe navigation.
+
 ### Classic Editor for Descriptions
 
 Format timeline descriptions using the integrated classic editor.
@@ -101,6 +112,20 @@ Create collapsible timeline groups with:
 - Custom status markers
 - Icon options
 - Grouped timeline steps
+
+### Timeline Analytics
+
+Understand how visitors interact with your timelines.
+
+Track supported metrics such as:
+
+ - Timeline views.
+ - Engaged readers.
+ - Reading depth.
+ - Completion rate.
+ - Click interactions.
+
+Analytics reports are available for supported timelines through the dashboard, shortcode list, and block editor sidebar.
 
 ### Company History Timeline
 
@@ -160,6 +185,26 @@ Configure:
 - Items revealed per click
 - Button styling
 
+### Shortcode Support
+
+Use the shortcode functionality to display supported timelines in different areas of your WordPress website.
+
+### Duplicate Timeline
+
+Duplicate an existing timeline as a draft to reuse its content and settings.
+
+= Why Choose Timeline Block? =
+Create beautiful and professional timelines without writing any code.
+
+- **Beautiful timeline layouts ** — Showcase stories, events, milestones, and projects with attractive horizontal and vertical timelines.
+- **Horizontal & vertical timeline support ** — Choose the perfect layout style to display your content.
+- **Ready-made timeline themes ** — Use professionally designed themes to create stunning timelines quickly.
+- **Easy Gutenberg integration ** — Add and customize timelines directly inside the WordPress block editor.
+- **Fully customizable design ** — Adjust colors, fonts, icons, and styling options to match your website.
+- **Shortcode support ** — Display your timelines anywhere on your WordPress website.
+- **Responsive timeline design ** — Looks great on desktop, tablet, and mobile devices.
+- **Lightweight & performance-friendly ** — Built for fast loading with optimized assets.
+
 = Common Use Cases =
 The plugin is useful for many types of WordPress websites: 
 
@@ -170,6 +215,13 @@ The plugin is useful for many types of WordPress websites:
 ✔ Educational Content: Present historical events, learning paths, and research timelines.
 ✔ Event Schedules: Organize conferences, programs, and important dates visually.
 ✔ Storytelling Websites: Create engaging visual stories with interactive timelines.
+
+## Happy User of Timeline Block? ## 
+
+- Join our [Facebook Community Group](https://www.facebook.com/share/g/18kgVFabgK/)
+- Learn from our tutorials on [YouTube Channel](https://www.youtube.com/@bplugins)
+- Or rate [Timeline Block](https://wordpress.org/support/plugin/timeline-block-block/reviews/#new-post) on WordPress
+
 
 
 = How to use =
@@ -267,6 +319,9 @@ Please report security bugs found in the source code of the Timeline Block plugi
 
 
 == Changelog ==
+
+= 1.5.8 - 17 November 2026 =
+* Added Discount Promo Banner.
 
 = 1.5.7 - 29 October 2026 =
 * Added Interactive Story Timeline block (Pro): big media slides with a zoomable, to-scale timeline, groups and eras.

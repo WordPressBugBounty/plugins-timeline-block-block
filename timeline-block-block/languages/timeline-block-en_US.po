@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Timeline Block - Beautiful Timeline Builder 1.5.7\n"
+"Project-Id-Version: Timeline Block - Beautiful Timeline Builder 1.5.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/timeline-block-block-free\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-29T05:55:57+00:00\n"
+"POT-Creation-Date: 2026-11-17T03:40:50+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: timeline-block\n"
@@ -73,6 +73,7 @@ msgid "Permission denied"
 msgstr ""
 
 #: includes/class-tlgb-cpt.php:16
+#: includes/class-tlgb-promo-banner.php:376
 msgid "Timeline Block"
 msgstr ""
 
@@ -134,20 +135,20 @@ msgstr ""
 msgid "Copy To Clipboard"
 msgstr ""
 
-#: includes/class-tlgb-main.php:32
+#: includes/class-tlgb-main.php:34
 msgid "Invalid timeline ID."
 msgstr ""
 
-#: includes/class-tlgb-main.php:38
-#: includes/class-tlgb-main.php:45
+#: includes/class-tlgb-main.php:40
+#: includes/class-tlgb-main.php:47
 msgid "Timeline not found."
 msgstr ""
 
-#: includes/class-tlgb-main.php:51
+#: includes/class-tlgb-main.php:53
 msgid "No timeline content found."
 msgstr ""
 
-#: includes/class-tlgb-main.php:60
+#: includes/class-tlgb-main.php:62
 msgid "Timeline block not found in this post."
 msgstr ""
 
@@ -161,6 +162,50 @@ msgstr ""
 
 #: includes/class-tlgb-options.php:42
 msgid "Plugin data will be preserved when uninstalled."
+msgstr ""
+
+#: includes/class-tlgb-promo-banner.php:384
+msgid "Timeline Block Biggest Black Friday Sale is Live – Up to 45% OFF!"
+msgstr ""
+
+#: includes/class-tlgb-promo-banner.php:387
+msgid "Upgrade to Timeline Block Pro at an exclusive Black Friday price! Unlock premium templates, stunning animations, interactive timelines, and powerful customization features to bring your stories to life!"
+msgstr ""
+
+#: includes/class-tlgb-promo-banner.php:390
+msgid "Pro Timeline Themes"
+msgstr ""
+
+#: includes/class-tlgb-promo-banner.php:391
+msgid "Readymade Timeline Templates"
+msgstr ""
+
+#: includes/class-tlgb-promo-banner.php:392
+msgid "Create Interactive, Zoomable Media-Rich Timelines"
+msgstr ""
+
+#: includes/class-tlgb-promo-banner.php:393
+msgid "Timeline Analytics Dashboard"
+msgstr ""
+
+#: includes/class-tlgb-promo-banner.php:394
+msgid "AI-Powered Content Generator"
+msgstr ""
+
+#: includes/class-tlgb-promo-banner.php:400
+msgid "Unlock PRO Features →"
+msgstr ""
+
+#: includes/class-tlgb-promo-banner.php:407
+msgid "Dismiss"
+msgstr ""
+
+#: includes/class-tlgb-promo-banner.php:408
+msgid "Dismiss banner"
+msgstr ""
+
+#: includes/class-tlgb-promo-link.php:116
+msgid "Black Friday Sale – Up to 45% OFF!"
 msgstr ""
 
 #: build/admin-dashboard.js:1

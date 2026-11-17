@@ -13,6 +13,8 @@ if(!class_exists('TLGBTimeline')){
       include_once TLGB_DIR_PATH . 'includes/class-tlgb-admin.php';
       include_once TLGB_DIR_PATH . 'includes/class-tlgb-options.php';
       include_once TLGB_DIR_PATH . 'includes/class-tlgb-ajax.php';
+      include_once TLGB_DIR_PATH . 'includes/class-tlgb-promo-banner.php';
+      include_once TLGB_DIR_PATH . 'includes/class-tlgb-promo-link.php';
 
       new TLGBPlugin();
       new TLGBCpt();

@@ -181,7 +181,8 @@ if (!class_exists('TLGBAdminMenu')) {
 
     public function adminEnqueueScripts($hook) {
       global $post_type, $typenow;
-      $current_post_type = $post_type ? $post_type : ( $typenow ? $typenow : ( isset( $_GET['post_type'] ) ? sanitize_text_field( $_GET['post_type'] ) : '' ) );
+      // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+      $current_post_type = $post_type ? $post_type : ( $typenow ? $typenow : ( isset( $_GET['post_type'] ) ? sanitize_text_field( wp_unslash( $_GET['post_type'] ) ) : '' ) );
       if($current_post_type === 'timeline_block' || $current_post_type === 'btimeline') {
         wp_enqueue_style('tlgb-shortcode-column', TLGB_DIR_URL. 'build/column.css', [], TLGB_VERSION);
         wp_enqueue_script('tlgb-shortcode-column', TLGB_DIR_URL. 'build/column.js', ['wp-i18n'], TLGB_VERSION, true);
